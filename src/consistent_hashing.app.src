@@ -1,0 +1,23 @@
+{application, consistent_hashing,
+ [{description, "An OTP application"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {mod, { consistent_hashing_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    lager
+   ]},
+  {env,[
+    {nodes, [
+        {node6, "node6@127.0.0.1"},
+        {node8, "node8@127.0.0.1"},
+        {node21, "node21@127.0.0.1"},
+        {node2111, "node2111@127.0.0.1"}
+    ]}
+  ]},
+  {modules, []},
+  {maintainers,["Goncalo Tomas"]},
+  {links,[{"Github","https://github.com/goncalotomas/consistent_hashing"}]},
+  {licenses,["Apache 2"]}
+ ]}.
